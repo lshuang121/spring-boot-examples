@@ -9,8 +9,9 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <groupId>com.hls.spring</groupId>
-    <artifactId>spring-boot-dubbo-provider</artifactId>
-    <name>spring-boot-dubbo-provider</name>
+    <artifactId>spring-boot-dubbo-consumer</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>spring-boot-dubbo-consumer</name>
     <description>Demo project for Spring Boot Dubbo integration</description>
     <properties>
         <java.version>11</java.version>
@@ -23,14 +24,13 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-
     </dependencies>
 
     <build>

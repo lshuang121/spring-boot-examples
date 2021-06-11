@@ -9,7 +9,10 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
+    <modules>
+        <module>spring-boot-dubbo-provider</module>
+        <module>spring-boot-dubbo-consumer</module>
+    </modules>
     <artifactId>spring-boot-dubbo</artifactId>
     <packaging>pom</packaging>
     <properties>

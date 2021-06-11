@@ -1,5 +1,6 @@
 package com.hls.spring.springboot.dubbo.provider;
 
+import com.hls.spring.common.model.User;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
