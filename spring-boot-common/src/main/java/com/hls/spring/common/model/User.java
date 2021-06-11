@@ -3,8 +3,17 @@ package com.hls.spring.common.model;
 import java.io.Serializable;
 
 public class User implements Serializable {
+  int uid;
   String name;
   int age;
+
+  public int getUid() {
+    return uid;
+  }
+
+  public void setUid(int uid) {
+    this.uid = uid;
+  }
 
   public String getName() {
     return name;
