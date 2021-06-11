@@ -1,6 +1,6 @@
 = Spring Boot Docker Example
 
-=== Info
+=== Description
 Demo of dockerizing a springboot app
 
 === Build - Jib

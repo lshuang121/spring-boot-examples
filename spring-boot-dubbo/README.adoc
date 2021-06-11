@@ -1,7 +1,7 @@
 = Spring Boot Integrate With Apache Dubbo
 
 == Introduction
-Demo of Spring Boot integrate with Apache Dubbo
+Demo of Spring Boot integrate with link:https://github.com/apache/dubbo[Dubbo]
 
 == Requirement
 Need to start a link:https://github.com/alibaba/nacos[nacos] instance  on local +
