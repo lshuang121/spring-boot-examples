@@ -8,6 +8,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.annotation.Resource;
+
 @RestController
 @RequestMapping
 public class UserController {
@@ -16,9 +18,17 @@ public class UserController {
   @DubboReference(version = "${user.service.version}",check = false)
   IUserService userService;
 
+  @Resource
+  IUserService userServiceV2;
+
   @RequestMapping("")
   public User getUser(){
     return userService.getUserById(1);
+  }
+
+  @RequestMapping("v2")
+  public User getUserV2(){
+    return userServiceV2.getUserById(1);
   }
 
 }
