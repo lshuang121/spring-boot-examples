@@ -4,5 +4,5 @@
 Demo of Spring Boot integrate with Apache Dubbo
 
 == Requirement
-Need to start a link:https://github.com/alibaba/nacos[nacos] instance  on local
+Need to start a link:https://github.com/alibaba/nacos[nacos] instance  on local +
 Nacos center url:http://localhost:8848/nacos/index.html
