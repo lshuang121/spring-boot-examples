@@ -26,5 +26,6 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>${file.encoding}</project.build.sourceEncoding>
+        <dubbo.version>2.7.11</dubbo.version>
     </properties>
 </project>
