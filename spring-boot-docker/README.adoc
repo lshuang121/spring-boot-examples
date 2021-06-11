@@ -1,1 +1,41 @@
 = Spring Boot Docker Example
+
+=== Info
+Demo of dockerizing a springboot app
+
+=== Build - Jib
+link:https://github.com/GoogleContainerTools/jib[Jib] builds optimized Docker and OCI images for your Java applications without a Docker daemon - and without deep mastery of Docker best-practices
+
+* Start a local docker registry
+[source, shell]
+----
+docker run -d -p 5000:5000 --restart always --name registry registry:2
+----
+* Maven build
+----
+mvn clean package -Pjib
+----
+
+=== Build - Manual
+Will need a private Maven repository +
+* Start a local docker registry [optional]
+[source, shell]
+----
+docker run -d -p 5000:5000 --restart always --name registry registry:2
+----
+* Build a docker image
+[source, shell]
+----
+docker image build --build-arg VERSION=1.0.0-SNAPSHOT -t spring-boot-docker:1.0.0-SNAPSHOT .
+----
+* Push a docker image [optional]
+[source, shell]
+----
+docker tag spring-boot-docker:1.0.0-SNAPSHOT localhost:5000/spring-boot-docker:1.0.0-SNAPSHOT
+docker push localhost:5000/spring-boot-docker:1.0.0-SNAPSHOT
+----
+* Run the image
+[source, shell]
+----
+docker run --rm --name=spring-boot-docker -p 8200:8200 -d -it spring-boot-docker:1.0.0-SNAPSHOT
+----
