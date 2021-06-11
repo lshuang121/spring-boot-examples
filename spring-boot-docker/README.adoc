@@ -18,6 +18,7 @@ mvn clean package -Pjib
 
 === Build - Manual
 Will need a private Maven repository +
+
 * Start a local docker registry [optional]
 [source, shell]
 ----
