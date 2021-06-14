@@ -4,9 +4,10 @@
 The structure of examples
 
 .Table of Contents
-[cols="5,5"]
+[cols="2", options="header"]
 |===
 |Example Name|Description
 |spring-boot-common|
 |spring-boot-docker|
 |spring-boot-dubbo|
+|===
