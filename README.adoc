@@ -1,1 +1,12 @@
 = Spring Boot Examples
+
+== Examples Structure
+The structure of examples
+
+.Table of Contents
+[cols="1,1"]
+|===
+|Example Name|Description
+|spring-boot-common|
+|spring-boot-docker|
+|spring-boot-dubbo|
