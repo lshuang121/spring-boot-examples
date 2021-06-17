@@ -12,10 +12,12 @@ public class UserServiceImpl implements IUserService {
 
   @Override
   public User getUserById(int uid) {
+    log.info("start getUserById");
     User user = new User();
     user.setAge(18);
     user.setName("Long");
     user.setUid(1);
+    log.info("end getUserById");
     return user;
   }
 }
