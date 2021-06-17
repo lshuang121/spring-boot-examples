@@ -6,5 +6,5 @@
 
     <dubbo:application name="user-consumer"  />
     <dubbo:registry address="nacos://localhost:8848" timeout="30000" />
-    <dubbo:reference id="userServiceV2" interface="com.hls.spring.common.contract.IUserService" version="1.0.1"/>
+    <dubbo:reference id="userServiceV2" interface="com.hls.spring.common.contract.IUserService" version="1.0.1" loadbalance="long"/>
 </beans>

@@ -15,19 +15,19 @@ import javax.annotation.Resource;
 public class UserController {
   private static final Logger log = LoggerFactory.getLogger(UserController.class);
 
-  @DubboReference(version = "${user.service.version}",check = false)
+  @DubboReference(version = "${user.service.version}", check = false, loadbalance = "long")
   IUserService userService;
 
   @Resource
   IUserService userServiceV2;
 
   @RequestMapping("")
-  public User getUser(){
+  public User getUser() {
     return userService.getUserById(1);
   }
 
   @RequestMapping("v2")
-  public User getUserV2(){
+  public User getUserV2() {
     return userServiceV2.getUserById(1);
   }
 
