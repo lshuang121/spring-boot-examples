@@ -3,22 +3,23 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
+        <artifactId>spring-boot-dubbo</artifactId>
         <groupId>com.hls.spring</groupId>
-        <artifactId>spring-boot-examples</artifactId>
         <version>${revision}</version>
-        <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <modules>
-        <module>spring-boot-dubbo-provider</module>
-        <module>spring-boot-dubbo-consumer</module>
-        <module>spring-boot-dubbo-spi-loadbalancer</module>
-    </modules>
-    <artifactId>spring-boot-dubbo</artifactId>
-    <packaging>pom</packaging>
+
+    <artifactId>spring-boot-dubbo-spi-loadbalancer</artifactId>
+
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
-
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.dubbo</groupId>
+            <artifactId>dubbo</artifactId>
+            <version>${dubbo.version}</version>
+        </dependency>
+    </dependencies>
 </project>
